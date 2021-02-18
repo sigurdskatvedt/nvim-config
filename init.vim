@@ -29,9 +29,10 @@ set ignorecase
 set smartcase
 set noswapfile
 set nobackup
-set undodir=~/.vim/undodir 
+set undodir=~/.config/nvim/undodir 
 set incsearch
 set scrolloff=8
 set signcolumn=yes
 colorscheme gruvbox
+set background=dark
 
