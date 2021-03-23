@@ -22,5 +22,6 @@ Plug 'vim-utils/vim-man'
 Plug 'git@github.com:kien/ctrlp.vim.git'
 Plug 'git@github.com:Valloric/YouCompleteMe.git'
 Plug 'mbbill/undotree'
+Plug 'tibabit/vim-templates'
 
 call plug#end()
