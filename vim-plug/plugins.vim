@@ -15,13 +15,21 @@ Plug 'gruvbox-community/gruvbox'
 Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/NERDTree'
 Plug 'jiangmiao/auto-pairs'
-Plug 'dense-analysis/ale'
 Plug 'jremmen/vim-ripgrep'
 Plug 'leafgarland/typescript-vim'
 Plug 'vim-utils/vim-man'
 Plug 'git@github.com:kien/ctrlp.vim.git'
-Plug 'git@github.com:Valloric/YouCompleteMe.git'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mbbill/undotree'
+Plug 'gisphm/vim-gitignore'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'airblade/vim-gitgutter'
 Plug 'tibabit/vim-templates'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'ryanoasis/vim-devicons'
+Plug 'scrooloose/NERDCommenter'
+
 
 call plug#end()

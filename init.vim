@@ -1,4 +1,5 @@
 source $HOME/.config/nvim/vim-plug/plugins.vim
+source $HOME/.config/nvim/coc-settings.vim
 
 let mapleader = " "
 noremap ø l
@@ -32,6 +33,7 @@ set nobackup
 set undodir=~/.config/nvim/undodir 
 set incsearch
 set scrolloff=8
+set relativenumber
 set signcolumn=yes
 colorscheme gruvbox
 set background=dark
