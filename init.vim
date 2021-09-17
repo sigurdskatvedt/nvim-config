@@ -1,3 +1,5 @@
+syntax enable
+filetype plugin indent on
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/coc-settings.vim
 
@@ -7,6 +9,11 @@ noremap l k
 noremap k j
 noremap j h
     
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:rustfmt_autosave = 1
 
 " Using lua functions
 nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
@@ -19,6 +26,9 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 set expandtab
 set smartindent
 set exrc
