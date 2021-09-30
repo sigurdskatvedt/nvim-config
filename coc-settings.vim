@@ -43,7 +43,7 @@ function! IsNERDTreeOpen()
 endfunction
 
 " Call NERDTreeFind iff NERDTree is active, current window contains a modifiable
- file, and we're not in vimdiff
+ "file, and we're not in vimdiff
 function! SyncTree()
   if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
     NERDTreeFind
