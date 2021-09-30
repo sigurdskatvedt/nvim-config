@@ -43,7 +43,7 @@ function! IsNERDTreeOpen()
 endfunction
 
 " Call NERDTreeFind iff NERDTree is active, current window contains a modifiable
-" file, and we're not in vimdiff
+ file, and we're not in vimdiff
 function! SyncTree()
   if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
     NERDTreeFind
@@ -52,7 +52,7 @@ function! SyncTree()
 endfunction
 
 " Highlight currently open buffer in NERDTree
-autocmd BufEnter * call SyncTree()
+"autocmd BufEnter * call SyncTree()
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.

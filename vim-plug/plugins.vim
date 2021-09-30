@@ -32,6 +32,9 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/NERDCommenter'
 Plug 'rust-lang/rust.vim'
 Plug 'tikhomirov/vim-glsl'
+Plug 'BurntSushi/ripgrep'
+Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'sharkdp/fd'
 
 
 call plug#end()
