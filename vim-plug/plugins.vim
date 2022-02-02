@@ -12,7 +12,6 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'gruvbox-community/gruvbox'
-Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/NERDTree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'leafgarland/typescript-vim'
@@ -35,6 +34,6 @@ Plug 'tikhomirov/vim-glsl'
 Plug 'BurntSushi/ripgrep'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'sharkdp/fd'
-
+Plug 'kizza/actionmenu.nvim'
 
 call plug#end()
