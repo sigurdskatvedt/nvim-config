@@ -35,5 +35,6 @@ Plug 'BurntSushi/ripgrep'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'sharkdp/fd'
 Plug 'kizza/actionmenu.nvim'
+Plug 'pantharshit00/vim-prisma'
 
 call plug#end()
