@@ -1,13 +1,16 @@
 syntax enable
 filetype plugin indent on
 source $HOME/.config/nvim/vim-plug/plugins.vim
-source $HOME/.config/nvim/coc-settings.vim
+" source $HOME/.config/nvim/coc-settings.vim
 
 let mapleader = " "
-noremap ø l
-noremap l k
-noremap k j
-noremap j h
+" noremap ø l
+" noremap l k
+" noremap k j
+" noremap j h
+
+noremap <cmd>c "+y
+
     
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -21,8 +24,6 @@ nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 
-" Action context actions
-nnoremap <silent> <Leader>s :call ActionMenuCodeActions()<CR>
 
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
@@ -30,7 +31,7 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 set expandtab
 set smartindent
