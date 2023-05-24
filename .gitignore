@@ -1,4 +1,1 @@
-autoload/plugged/*
-autoload
-.netrwhist
-.cocsettings.vim
+plugin/**/*

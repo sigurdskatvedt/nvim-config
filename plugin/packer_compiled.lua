@@ -104,20 +104,43 @@ _G.packer_plugins = {
     path = "/Users/sigurdskatvedt/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["null-ls.nvim"] = {
+    config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fnull-ls\frequire\0" },
+    loaded = true,
+    path = "/Users/sigurdskatvedt/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/sigurdskatvedt/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-comment"] = {
+    config = { "\27LJ\2\nB\0\0\3\0\3\0\b6\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\0024\2\0\0B\0\2\1K\0\1\0\nsetup\17nvim_comment\frequire\0" },
+    loaded = true,
+    path = "/Users/sigurdskatvedt/.local/share/nvim/site/pack/packer/start/nvim-comment",
+    url = "https://github.com/terrortylor/nvim-comment"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/Users/sigurdskatvedt/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-tree.lua"] = {
+    config = { "\27LJ\2\n¥\2\0\0\6\2\16\0%-\0\0\0009\0\0\0B\0\1\2\15\0\0\0X\1\31€9\1\1\0009\1\2\1\6\1\3\0X\2\6€\6\1\4\0X\2\4€\6\1\5\0X\2\2€\a\1\6\0X\2\a€6\2\a\0009\2\b\2'\4\t\0009\5\n\0&\4\5\4B\2\2\1X\2\n€\6\1\v\0X\2\2€\a\1\f\0X\2\6€6\2\a\0009\2\b\2'\4\r\0009\5\n\0&\4\5\4B\2\2\1-\2\1\0009\2\14\0029\2\15\2B\2\1\1K\0\1\0\1À\0À\vreload\ttree\"silent !git restore --staged \aA \aM \18absolute_path\21silent !git add \bcmd\bvim\a M\aAM\aMM\a??\tfile\15git_status\23get_node_at_cursor]\0\1\4\1\4\0\b5\1\1\0'\2\0\0\18\3\0\0&\2\3\2=\2\2\1-\2\0\0=\2\3\1L\1\2\0\0À\vbuffer\tdesc\1\0\3\fnoremap\2\vsilent\2\vnowait\2\16nvim-tree: –\1\1\1\n\2\n\0\0193\1\0\0-\2\0\0009\2\1\0029\2\2\0029\2\3\2\18\4\0\0B\2\2\0016\2\4\0009\2\5\0029\2\6\2'\4\a\0'\5\b\0-\6\1\0\18\a\1\0'\t\t\0B\a\2\0A\2\3\0012\0\0€K\0\1\0\0À\2À\fGit add\aga\6n\bset\vkeymap\bvim\22default_on_attach\rmappings\vconfig\0ö\1\1\0\a\0\f\0\0216\0\0\0'\2\1\0B\0\2\0026\1\0\0'\3\2\0B\1\2\0023\2\3\0006\3\0\0'\5\4\0B\3\2\0029\3\5\0035\5\6\0003\6\a\0=\6\b\0055\6\t\0=\6\n\0054\6\0\0=\6\v\5B\3\2\0012\0\0€K\0\1\0\ffilters\tview\1\0\2 preserve_window_proportions\2\nwidth\3(\14on_attach\0\1\0\2\23sync_root_with_cwd\2\18hijack_cursor\2\nsetup\14nvim-tree\0\18nvim-tree.lib\18nvim-tree.api\frequire\0" },
+    loaded = true,
+    path = "/Users/sigurdskatvedt/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/nvim-tree/nvim-tree.lua"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/Users/sigurdskatvedt/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/Users/sigurdskatvedt/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -157,6 +180,18 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: null-ls.nvim
+time([[Config for null-ls.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fnull-ls\frequire\0", "config", "null-ls.nvim")
+time([[Config for null-ls.nvim]], false)
+-- Config for: nvim-tree.lua
+time([[Config for nvim-tree.lua]], true)
+try_loadstring("\27LJ\2\n¥\2\0\0\6\2\16\0%-\0\0\0009\0\0\0B\0\1\2\15\0\0\0X\1\31€9\1\1\0009\1\2\1\6\1\3\0X\2\6€\6\1\4\0X\2\4€\6\1\5\0X\2\2€\a\1\6\0X\2\a€6\2\a\0009\2\b\2'\4\t\0009\5\n\0&\4\5\4B\2\2\1X\2\n€\6\1\v\0X\2\2€\a\1\f\0X\2\6€6\2\a\0009\2\b\2'\4\r\0009\5\n\0&\4\5\4B\2\2\1-\2\1\0009\2\14\0029\2\15\2B\2\1\1K\0\1\0\1À\0À\vreload\ttree\"silent !git restore --staged \aA \aM \18absolute_path\21silent !git add \bcmd\bvim\a M\aAM\aMM\a??\tfile\15git_status\23get_node_at_cursor]\0\1\4\1\4\0\b5\1\1\0'\2\0\0\18\3\0\0&\2\3\2=\2\2\1-\2\0\0=\2\3\1L\1\2\0\0À\vbuffer\tdesc\1\0\3\fnoremap\2\vsilent\2\vnowait\2\16nvim-tree: –\1\1\1\n\2\n\0\0193\1\0\0-\2\0\0009\2\1\0029\2\2\0029\2\3\2\18\4\0\0B\2\2\0016\2\4\0009\2\5\0029\2\6\2'\4\a\0'\5\b\0-\6\1\0\18\a\1\0'\t\t\0B\a\2\0A\2\3\0012\0\0€K\0\1\0\0À\2À\fGit add\aga\6n\bset\vkeymap\bvim\22default_on_attach\rmappings\vconfig\0ö\1\1\0\a\0\f\0\0216\0\0\0'\2\1\0B\0\2\0026\1\0\0'\3\2\0B\1\2\0023\2\3\0006\3\0\0'\5\4\0B\3\2\0029\3\5\0035\5\6\0003\6\a\0=\6\b\0055\6\t\0=\6\n\0054\6\0\0=\6\v\5B\3\2\0012\0\0€K\0\1\0\ffilters\tview\1\0\2 preserve_window_proportions\2\nwidth\3(\14on_attach\0\1\0\2\23sync_root_with_cwd\2\18hijack_cursor\2\nsetup\14nvim-tree\0\18nvim-tree.lib\18nvim-tree.api\frequire\0", "config", "nvim-tree.lua")
+time([[Config for nvim-tree.lua]], false)
+-- Config for: nvim-comment
+time([[Config for nvim-comment]], true)
+try_loadstring("\27LJ\2\nB\0\0\3\0\3\0\b6\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\0024\2\0\0B\0\2\1K\0\1\0\nsetup\17nvim_comment\frequire\0", "config", "nvim-comment")
+time([[Config for nvim-comment]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
